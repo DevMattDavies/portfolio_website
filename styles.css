@@ -1,0 +1,271 @@
+:root {
+    /* General styling */
+    --primary: #393E46;
+    --secondary: #fffee7;
+    --title-font: 'Bebas Neue', cursive;
+    --text-content-font: 'Lato', sans-serif;
+
+    /* Code styling */
+    --code-purple: rgb(210, 39, 210);
+    --code-white: #fffee7;
+    --code-green: rgb(133, 229, 133);
+    --code-function-blue: rgb(96, 170, 255);
+    --code-equals-blue: cyan;
+    --code-orange: orange;
+    --code-yellow: yellow;
+    --code-red: rgb(251, 86, 86);
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+body {}
+
+* {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+.content-container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* Global title / subtitle styling */
+/* Light title styling */
+.title-light {
+    color: var(--secondary);
+    text-shadow: 2px 2px black;
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+    font-family: var(--title-font);
+}
+
+.title-light:before,
+.title-light:after {
+    background-color: var(--secondary);
+    text-shadow: 2px 2px black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.title-light:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.title-light:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Dark title styling */
+.title-dark {
+    color: var(--primary);
+    font-size: 4rem;
+    letter-spacing: 0.15rem;
+    padding-top: 2rem;
+    font-family: var(--title-font);
+}
+
+.title-dark:before,
+.title-dark:after {
+    background-color: var(--primary);
+    text-shadow: 2px 2px black;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.title-dark:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.title-dark:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Light text content styling */
+
+.text-content-light {
+    color: var(--secondary);
+    /* text-shadow: 2px 2px black; */
+    font-family: var(--text-content-font);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    float: right;
+    width: 60%;
+
+}
+
+/* Dark text content styling */
+
+/* Title section */
+
+#main-img {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: block;
+}
+
+#title-text {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+#main-title {
+    font-size: 4.5rem;
+    color: var(--secondary);
+    text-shadow: 2px 2px var(--primary);
+    margin-bottom: 0;
+    letter-spacing: 0.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: right;
+}
+
+#main-title-closing {
+    font-size: 4.5rem;
+    color: var(--secondary);
+    text-shadow: 2px 2px var(--primary);
+    margin-top: 0;
+    letter-spacing: 0.5rem;
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+#main-subtitle {
+    font-size: 2rem;
+    color: var(--secondary);
+    text-shadow: 2px 2px var(--primary);
+    text-align: center;
+    padding: 30px 0;
+}
+
+.typed-cursor {
+    font-size: 2rem;
+    color: black;
+}
+
+.typed-words-splash {
+    font-size: 2rem;
+    color: var(--secondary);
+    text-shadow: 2px 2px var(--primary);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.3rem;
+    text-align: center;
+}
+
+/* About Me Section */
+
+#about-me {
+    background-color: var(--primary);
+    width: 100vw;
+    overflow: hidden;
+    padding: 2rem 0 2rem;
+    min-height: 80vh;
+    position: relative;
+}
+
+.text-container {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+#about-me-code {
+    width: 100%;
+    margin-right: 2rem;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.code-purple {
+    color: var(--code-purple);
+}
+
+.code-white {
+    color: var(--code-white);
+}
+
+.code-green {
+    color: var(--code-green);
+}
+
+.code-function-blue {
+    color: var(--code-function-blue);
+}
+
+.code-equals-blue {
+    color: var(--code-equals-blue);
+}
+
+.code-orange {
+    color: var(--code-orange);
+}
+
+.code-yellow {
+    color: var(--code-yellow);
+}
+
+.code-red {
+    color: var(--code-red);
+}
+
+.typed-words-about-me {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    text-shadow: 2px 2px var(--primary);
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#about-me-text {
+    text-align: justify;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+#about-me-arrow {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    transform: translate(10%, 0%);
+    filter: drop-shadow(3px 5px 2px black);
+}
+
+/* Skills Section */
+
+#skills {
+    background-color: var(--secondary);
+    width: 100vw;
+    overflow: hidden;
+    padding: 2rem 0 10rem;
+    position: relative;
+}
+
+#skills-title {
+    text-align: right;
+}
