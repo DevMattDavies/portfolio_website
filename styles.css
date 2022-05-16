@@ -18,9 +18,14 @@
 
 html {
     font-size: calc(60% + 0.8vmin);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-body {}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 * {
     font-size: 1rem;
@@ -30,7 +35,6 @@ body {}
 
 main {
     max-width: 80%;
-    margin: 0 auto;
 }
 
 
@@ -128,7 +132,7 @@ main {
 
 #title-text {
     position: absolute;
-    right: 0;
+    right: 10%;
     bottom: 5%;
 }
 
