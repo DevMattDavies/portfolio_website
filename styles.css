@@ -78,6 +78,7 @@ main {
 /* Dark title styling */
 .title-dark {
     color: var(--primary);
+    text-shadow: 2px 2px black;
     font-size: 4rem;
     letter-spacing: 0.15rem;
     padding-top: 2rem;
@@ -110,16 +111,24 @@ main {
 
 .text-content-light {
     color: var(--secondary);
-    /* text-shadow: 2px 2px black; */
     font-family: var(--text-content-font);
     font-size: 1.2rem;
     line-height: 2rem;
     float: right;
-    width: 60%;
-
+    width: 50%;
 }
 
+
 /* Dark text content styling */
+
+.text-content-dark {
+    color: var(--primary);
+    font-family: var(--text-content-font);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    float: left;
+    width: 50%;
+}
 
 /* Title section */
 
@@ -139,7 +148,7 @@ main {
 #main-title {
     font-size: 4.5rem;
     color: var(--secondary);
-    text-shadow: 2px 2px var(--primary);
+    text-shadow: 2px 2px black;
     margin-bottom: 0;
     letter-spacing: 0.5rem;
     font-family: 'Cinzel Decorative', cursive;
@@ -149,7 +158,7 @@ main {
 #main-title-closing {
     font-size: 4.5rem;
     color: var(--secondary);
-    text-shadow: 2px 2px var(--primary);
+    text-shadow: 2px 2px black;
     margin-top: 0;
     letter-spacing: 0.5rem;
     font-family: 'Cinzel Decorative', cursive;
@@ -160,20 +169,25 @@ main {
 #main-subtitle {
     font-size: 2rem;
     color: var(--secondary);
-    text-shadow: 2px 2px var(--primary);
+    text-shadow: 2px 2px black;
     text-align: center;
     padding: 30px 0;
 }
 
-.typed-cursor {
-    font-size: 2rem;
+#main-subtitle .typed-cursor {
+    font-size: 3rem;
+    color: black;
+}
+
+#about-me-code .typed-cursor {
+    font-size: 1.5rem;
     color: black;
 }
 
 .typed-words-splash {
     font-size: 2rem;
     color: var(--secondary);
-    text-shadow: 2px 2px var(--primary);
+    text-shadow: 2px 2px black;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.3rem;
     text-align: center;
@@ -185,14 +199,14 @@ main {
     background-color: var(--primary);
     width: 100vw;
     overflow: hidden;
-    padding: 2rem 0 2rem;
+    padding: 2rem 0;
     min-height: 80vh;
     position: relative;
 }
 
 .text-container {
     display: flex;
-    margin-top: 2rem;
+    margin: 2rem auto;
 
 }
 
@@ -272,4 +286,13 @@ main {
 
 #skills-title {
     text-align: right;
+}
+
+.skills-text {
+    text-align: justify;
+}
+
+#skills-icon-group {
+    position: relative;
+    width: 50%;
 }
