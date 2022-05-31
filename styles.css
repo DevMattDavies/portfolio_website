@@ -52,6 +52,7 @@ main {
     font-size: 4rem;
     letter-spacing: 0.15rem;
     font-family: var(--title-font);
+    font-weight: 300;
 
 }
 
@@ -85,6 +86,7 @@ main {
     letter-spacing: 0.15rem;
     padding-top: 2rem;
     font-family: var(--title-font);
+    font-weight: 300;
 }
 
 .title-dark:before,
@@ -119,7 +121,7 @@ main {
     float: right;
     width: 50%;
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
 }
 
 
@@ -133,7 +135,7 @@ main {
     float: left;
     width: 50%;
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
 }
 
 /* Title section */
