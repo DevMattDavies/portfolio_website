@@ -220,6 +220,8 @@ main {
     width: 100%;
     margin-right: 2rem;
     font-family: 'Anonymous Pro', monospace;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .code-purple {
@@ -268,6 +270,7 @@ main {
     text-align: justify;
     margin-left: 2rem;
     width: 100%;
+    font-style: italic;
 }
 
 #about-me-arrow {
