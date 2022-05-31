@@ -199,6 +199,8 @@ main {
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.3rem;
     text-align: center;
+    font-style: italic;
+    font-weight: 300;
 }
 
 /* About Me Section */
