@@ -5,6 +5,7 @@
     --title-font: 'Bebas Neue', cursive;
     --text-content-font: 'Lato', sans-serif;
 
+
     /* Code styling */
     --code-purple: rgb(210, 39, 210);
     --code-white: #fffee7;
@@ -51,6 +52,7 @@ main {
     font-size: 4rem;
     letter-spacing: 0.15rem;
     font-family: var(--title-font);
+
 }
 
 .title-light:before,
@@ -116,6 +118,8 @@ main {
     line-height: 2rem;
     float: right;
     width: 50%;
+    font-weight: 300;
+    font-style: normal;
 }
 
 
@@ -128,6 +132,8 @@ main {
     line-height: 2rem;
     float: left;
     width: 50%;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /* Title section */
