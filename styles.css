@@ -1,0 +1,302 @@
+@font-face {
+  font-family: "Calibre";
+  src: url("../fonts/Calibre-Light.woff2") format("woff2"),
+    url("../fonts/Calibre-Light.woff") format("woff"),
+    url("../fonts/Calibre-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+:root {
+  /* General styling */
+  --primary: #000103;
+  --secondary: #ffffff;
+  --highlight-light: rgb(124, 96, 237);
+  /* hex #7c60ed  */
+  --highlight-mid: rgb(123, 69, 218);
+  /* hex #7c45da */
+  --highlight-dark: rgb(56, 27, 82);
+  /* hex #381b52 */
+  --title-font: "Calibre", sans-serif;
+  --text-content-font: "Calibre", sans-serif;
+  --text-title-size: 2.5rem;
+  --text-content-size: 1.2rem;
+
+  /* Code styling */
+  --code-purple: rgb(210, 39, 210);
+  --code-white: #fffee7;
+  --code-green: rgb(133, 229, 133);
+  --code-function-blue: rgb(96, 170, 255);
+  --code-equals-blue: cyan;
+  --code-orange: orange;
+  --code-yellow: yellow;
+  --code-red: rgb(251, 86, 86);
+}
+
+html {
+  font-size: calc(60% + 0.8vmin);
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--primary);
+}
+
+* {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  max-width: 80%;
+}
+
+.content-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+/* Global title / subtitle styling */
+/* Light title styling */
+.title-right,
+.title-left {
+  color: var(--secondary);
+  font-size: var(--text-title-size);
+  letter-spacing: 0.15rem;
+  font-family: var(--title-font);
+  font-weight: bold;
+}
+
+.title-left:after,
+.title-right:before {
+  background-color: var(--highlight-mid);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  margin: 0 10px;
+}
+
+.title-light:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.title-light:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+/* Light text content styling */
+
+.text-content-light {
+  color: var(--secondary);
+  font-family: var(--text-content-font);
+  font-size: var(--text-content-size);
+  line-height: 2rem;
+  width: 50%;
+  font-weight: 300;
+}
+
+/* Navbar */
+#navbar {
+  position: absolute;
+  background-color: transparent;
+  bottom: 54%;
+  right: 15.5%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar-text {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  text-align: right;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-item {
+  color: var(--highlight-light);
+  text-decoration: none;
+  font-family: var(--text-content-font);
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.nav-item::hover {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition: transform 0.3s ease;
+}
+
+/* .nav-item:hover {
+    text-decoration: underline;
+    
+} */
+
+.nav-icon {
+  height: 3rem;
+  width: auto;
+}
+
+/* Title section */
+
+#main-img {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background: transparent;
+}
+
+#title-text {
+  bottom: 53%;
+  left: 16.5%;
+  position: absolute;
+}
+
+#main-title {
+  color: var(--secondary);
+  font-size: 4rem;
+  letter-spacing: 0.2rem;
+  font-family: var(--title-font);
+  text-align: left;
+  font-weight: 300;
+  padding-bottom: 0.7rem;
+}
+
+#main-title-span {
+  color: var(--highlight);
+  font-size: 4rem;
+  font-weight: bold;
+  background-image: linear-gradient(
+    180deg,
+    var(--highlight-light),
+    var(--highlight-dark)
+  );
+  background-clip: text;
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
+}
+
+#main-subtitle {
+  color: var(--secondary);
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  letter-spacing: 0.1rem;
+}
+
+.typed-words-splash-subtitle {
+  font-size: 1.5rem;
+}
+
+#main-subtitle .typed-cursor {
+  font-size: 2rem;
+  color: var(--secondary);
+}
+
+/* About Me Section */
+
+#about-me {
+  width: 100vw;
+  overflow: hidden;
+  padding: 15rem 0 4rem;
+  min-height: 80vh;
+  /* position: relative; */
+}
+
+#about-me-text {
+  text-align: justify;
+}
+
+.about-text-container,
+.skills-text-container,
+.portfolio-text-container {
+  display: flex;
+  margin: 2rem auto;
+  justify-content: space-between;
+}
+
+#image-container {
+  display: inline-block;
+  position: relative;
+}
+
+#image-container::before {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  width: 100%;
+  height: 300px;
+  border: 2px solid var(--highlight-mid);
+  border-radius: 5px;
+  content: "";
+}
+
+#about-me-image {
+  height: 300px;
+  border-radius: 5px;
+  width: auto;
+  filter: opacity(0.8) drop-shadow(0 0 0 var(--highlight-mid));
+}
+
+/* Skills Section */
+
+#skills {
+  width: 100vw;
+  overflow: hidden;
+  padding: 2rem 0 10rem;
+}
+
+#skills-title {
+  text-align: right;
+}
+
+#skills-icon-group {
+  display: grid;
+  margin: 20px 0;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.tech-icon {
+  height: 60px;
+  width: 60px;
+}
+
+#skills-text {
+  text-align: justify;
+}
+
+/* Portfolio Section */
+#portfolio {
+  width: 100vw;
+  overflow: hidden;
+  padding: 2rem 0 10rem;
+}
+
+/* Contact Section */

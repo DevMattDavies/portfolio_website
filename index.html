@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mattdavies.dev</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <div id="navbar-text">
+        <a class="nav-item" href="#">/ About /</a>
+        <a class="nav-item" href="#">/ Tech Stack /</a>
+        <a class="nav-item" href="#">/ Portfolio /</a>
+        <a class="nav-item" href="#">/ Contact /</a>
+      </div>
+    </nav>
+    <main>
+      <!-- Main splash section -->
+      <section id="splash">
+        <img
+          id="main-img"
+          src="./images/Matt-edit.png"
+          alt="mountains background"
+        />
+        <div id="title-text">
+          <h1 id="main-title">
+            Hi, I'm <span id="main-title-span">Matt.</span>
+            <!-- <span class="typed-words-splash-title"></span> -->
+          </h1>
+          <h2 id="main-subtitle">
+            <span class="typed-words-splash-subtitle"></span>
+          </h2>
+        </div>
+      </section>
+      <!-- About Me Section -->
+      <section id="about-me">
+        <div class="content-container">
+          <h1 id="about-me-title" class="title-left">About Me</h1>
+          <div class="about-text-container">
+            <p id="about-me-text" class="text-content-light">
+              I love designing things for the web. I've always had a keen
+              interest in tech - it was during the summer of 2021 that I decided
+              I wanted to launch myself into a career in the tech industry and
+              spent the following months teaching myself to code. Originally
+              from a project management background, I immediately fell in love
+              with the balance between logic and art that web design demands.
+              <br /><br />
+              After learning the basics, I attended the School of Code
+              full-stack developer bootcamp - a 16-week intensive course
+              covering all aspects of programming; from front end design, React,
+              APIs, UX and UI, to Node JS, Express, Databases and test-driven
+              development. Now a graduate, I'm ready to flex those new found
+              skills in a real-world tech team.<br /><br />
+            </p>
+            <div id="image-container">
+              <img id="about-me-image" src="./images/me.jpeg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills Section -->
+      <section id="skills">
+        <div class="content-container">
+          <h1 id="skills-title" class="title-right">Tech Stack</h1>
+          <div class="skills-text-container">
+            <div id="skills-icon-group">
+              <img class="tech-icon" src="./icons/tech_icons/html2.png" />
+              <img class="tech-icon" src="./icons/tech_icons/css2.png" />
+              <img class="tech-icon" src="./icons/tech_icons/js.png" />
+              <img class="tech-icon" src="./icons/tech_icons/react.png" />
+              <img class="tech-icon" src="./icons/tech_icons/api.png" />
+              <img class="tech-icon" src="./icons/tech_icons/node.png" />
+              <img class="tech-icon" src="./icons/tech_icons/sql.png" />
+              <img class="tech-icon" src="./icons/tech_icons/jira.png" />
+              <img class="tech-icon" src="./icons/tech_icons/agile.png" />
+              <!-- <img class="tech-icon" src="../icons/tech_icons/vscode.png"></img> -->
+            </div>
+            <p id="skills-text" class="text-content-light">
+              Leveraging a range of languages and technologies to produce
+              complete, end-to-end applications is at the heart of what I do. My
+              journey started with the fundamentals - HTML, CSS and JavaScript -
+              before moving on to back-end and learning to create apps utilising
+              the power of Express, Node JS, and database storage. More recently
+              I've been able to consolidate this knowledge and, with the help of
+              JSX and React, create more complex user interfaces and dynamically
+              interactive webpages that can efficiently scale to user
+              demands.<br /><br />
+              During my time at School of Code, there has also been a focus on
+              non-programming skills; wireframing with Figma, project tracking
+              using Trello and Jira, and project methodology with an Agile
+              approach.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="content-container">
+          <h1 id="portfolio-title" class="title-left">Portfolio</h1>
+          <div class="portfolio-text-container"></div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <!-- <section id="contact">
+        <div id="navbar-icons">
+          <a target="_blank" href="https://github.com/DevMattDavies"
+            ><img class="nav-icon" src="../icons/github_purple_mid.png" />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/matt-davies-3488991a2/"
+            ><img class="nav-icon" src="../icons/linkedin_purple_mid.png" />
+          </a>
+          <a target="_blank" href="https://twitter.com/DevMattDavies"
+            ><img class="nav-icon" src="../icons/twitter_purple_mid.png" />
+          </a>
+        </div>
+      </section> -->
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./src/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
