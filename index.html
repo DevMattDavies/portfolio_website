@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,7 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,300;1,400&family=Permanent+Marker&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./node_modules/@splidejs/splide/dist/css/themes/splide-skyblue.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
   </head>
 
   <body>
@@ -32,7 +37,7 @@
       </div>
     </nav>
     <main>
-      <!-- Main splash section -->
+      <!-- MAIN SPLASH SECTION -->
       <section id="splash">
         <img
           id="main-img"
@@ -78,7 +83,7 @@
           </div>
         </div>
       </section>
-      <!-- Skills Section -->
+      <!-- SKILLS SECTION -->
       <section id="skills">
         <div class="content-container">
           <div id="skills-title-container" class="title-container">
@@ -116,6 +121,7 @@
           </div>
         </div>
       </section>
+      <!-- PORTFOLIO SECTION -->
       <section id="portfolio">
         <div class="content-container">
           <div class="title-container">
@@ -126,7 +132,16 @@
               src="./icons/Line.png"
             />
           </div>
-          <div class="portfolio-text-container"></div>
+          <div class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">Slide 01</li>
+                <li class="splide__slide">Slide 02</li>
+                <li class="splide__slide">Slide 03</li>
+                <li class="splide__slide">Slide 04</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Contact Section -->
@@ -162,6 +177,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./node_modules/@splidejs/splide/dist/js/splide.min.js"
     ></script>
   </body>
 </html>

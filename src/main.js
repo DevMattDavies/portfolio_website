@@ -6,3 +6,12 @@ let typedSplashSubtitle = new Typed(".typed-words-splash-subtitle", {
   typeSpeed: 80,
   loop: false,
 });
+
+// Splide
+
+document.addEventListener("DOMContentLoaded", function () {
+  var splide = new Splide(".splide", {
+    type: "loop",
+  });
+  splide.mount();
+});

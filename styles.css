@@ -309,4 +309,27 @@ main {
   padding: 2rem 0 10rem;
 }
 
+.splide {
+  height: 500px;
+  margin-top: 80px;
+  color: white;
+  font-family: var(--text-content-font);
+}
+
+.splide__arrow:focus {
+  display: none !important;
+}
+
+.splide__arrow svg {
+  fill: var(--highlight-mid);
+}
+
+.splide__pagination__page {
+  background: var(--secondary);
+}
+
+.splide__pagination__page.is-active {
+  background: var(--highlight-mid);
+}
+
 /* Contact Section */
