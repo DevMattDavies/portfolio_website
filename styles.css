@@ -157,16 +157,8 @@ main {
 .nav-item:hover {
   text-decoration: none;
   color: var(--secondary);
-  /* color: linear-gradient(to right, white 50%, red 50%); */
   transition: 1s;
-  /* background-size: 200% 100%; */
-  /* background-position: left bottom; */
 }
-
-/* .nav-item:hover {
-    text-decoration: underline;
-    
-} */
 
 .nav-icon {
   height: 3rem;
@@ -214,14 +206,13 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-fill-color: transparent;
 }
 
 #main-subtitle {
   color: var(--secondary);
   font-family: var(--alt-font);
   text-align: left;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
 }
 
 .typed-words-splash-subtitle {
