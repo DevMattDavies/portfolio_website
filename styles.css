@@ -223,7 +223,7 @@ main {
 #about-me {
   width: 100vw;
   overflow: hidden;
-  padding: 15rem 0 4rem;
+  padding: 10rem 0 4rem;
   min-height: 80vh;
   /* position: relative; */
 }
