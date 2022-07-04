@@ -70,9 +70,10 @@ main {
   letter-spacing: 0.15rem;
   font-family: var(--alt-font);
   font-weight: bold;
+  /* min-width: 50%; */
 }
 
-.title-left:after,
+/* .title-left:after,
 .title-right:before {
   background-color: var(--highlight-mid);
   content: "";
@@ -82,7 +83,7 @@ main {
   vertical-align: middle;
   width: 50%;
   margin: 0 10px;
-}
+} */
 
 .title-light:before {
   right: 0.5em;
@@ -103,6 +104,32 @@ main {
   line-height: 2rem;
   width: 50%;
   font-weight: 300;
+}
+
+/* Subtitle containers with custom line positioning */
+
+.title-container {
+  display: flex;
+  max-width: 100%;
+  align-items: center;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.custom-line {
+  max-width: 70%;
+  height: 70%;
+  padding-left: 20px;
+}
+
+#skills-line {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#skills-title-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Navbar */
