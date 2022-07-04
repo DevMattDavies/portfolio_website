@@ -277,10 +277,11 @@ main {
 
 #skills-icon-group {
   display: grid;
-  margin: 20px 0;
+  margin: 100px 0;
   column-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  height: 400px;
 }
 
 .tech-icon {
