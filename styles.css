@@ -17,6 +17,7 @@
   --highlight-dark: rgb(56, 27, 82);
   /* hex #381b52 */
   --title-font: "Calibre", sans-serif;
+  --alt-font: "Permanent Marker", cursive;
   --text-content-font: "Calibre", sans-serif;
   --text-title-size: 2.5rem;
   --text-content-size: 1.2rem;
@@ -67,7 +68,7 @@ main {
   color: var(--secondary);
   font-size: var(--text-title-size);
   letter-spacing: 0.15rem;
-  font-family: var(--title-font);
+  font-family: var(--alt-font);
   font-weight: bold;
 }
 
@@ -127,7 +128,7 @@ main {
 .nav-item {
   color: var(--highlight-light);
   text-decoration: none;
-  font-family: var(--text-content-font);
+  font-family: var(--alt-font);
   padding: 0.3rem 0;
   text-transform: uppercase;
   font-weight: 300;
@@ -204,18 +205,20 @@ main {
 
 #main-subtitle {
   color: var(--secondary);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--alt-font);
   text-align: left;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.5rem;
 }
 
 .typed-words-splash-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 #main-subtitle .typed-cursor {
+  /* display: none; */
   font-size: 2rem;
   color: var(--secondary);
+  font-family: var(--title-font);
 }
 
 /* About Me Section */
