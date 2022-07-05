@@ -40,6 +40,7 @@ html {
   max-width: 100%;
   overflow-x: hidden;
   background-color: var(--primary);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -113,12 +114,14 @@ main {
   padding-left: 20px;
 }
 
-#skills-line {
+#skills-line,
+#contact-line {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-#skills-title-container {
+#skills-title-container,
+#contact-title-container {
   display: flex;
   justify-content: flex-end;
 }
@@ -158,11 +161,6 @@ main {
   text-decoration: none;
   color: var(--secondary);
   transition: 1s;
-}
-
-.nav-icon {
-  height: 3rem;
-  width: auto;
 }
 
 /* Title section */
@@ -274,13 +272,15 @@ main {
 
 /* Skills Section */
 
-#skills {
+#skills,
+#contact {
   width: 100vw;
   overflow: hidden;
   padding: 2rem 0 10rem;
 }
 
-#skills-title {
+#skills-title,
+#contact-title {
   text-align: right;
 }
 
@@ -332,4 +332,116 @@ main {
   background: var(--highlight-mid);
 }
 
+.slide-container {
+  display: flex;
+  max-width: 70%;
+  max-height: 70%;
+  margin: 0 auto;
+}
+
+.project-left-section {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 20px;
+  justify-content: space-around;
+}
+
+.project-right-section {
+  margin-left: 20px;
+  width: 50%;
+  text-align: justify;
+}
+
+.project-screenshot {
+  /* height: */
+}
+
+.created-with {
+  margin: 30px 0 10px;
+  padding: 0;
+  color: var(--highlight-mid);
+  font-weight: 400;
+}
+
+.project-icons {
+  display: flex;
+  align-items: center;
+}
+
+.project-icon {
+  height: auto;
+  width: 2rem;
+  margin-right: 15px;
+}
+
+.project-info {
+  font-weight: 300;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-links a:hover {
+  text-decoration: none;
+  color: var(--secondary);
+  transition: 1s;
+}
+
+.project-links a {
+  color: var(--highlight-mid);
+}
+
 /* Contact Section */
+
+#contact-icons {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.contact-subtitle {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.icon-segment {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  align-items:center;
+  width: 100%;
+}
+
+.contact-icon:hover {
+  cursor: pointer;
+}
+
+.icon-text {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transform: rotate(-45deg);
+}
+
+.contact-icon {
+  height: 75px;
+  width: 75px;
+}
+
+.contact-text-container {
+  display: flex;
+  flex-direction: column;
+  color: var(--secondary);
+  font-family: var(--text-content-font);
+  margin: 0 4rem;
+  width: 50%;
+}
+
+.contact-text-container hr {
+  color: var(--secondary);
+  border-bottom: 0.8px solid #fff;
+  margin-top: 0.5rem;
+}
