@@ -12,6 +12,17 @@ let typedSplashSubtitle = new Typed(".typed-words-splash-subtitle", {
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     type: "loop",
+    autoplay: true,
+    interval: 7000,
+    speed: 2000,
+    arrows: false,
+    pauseOnHover: true,
   });
   splide.mount();
 });
+
+// Compose email on click
+
+function sendEmail() {
+  window.location = "mailto:matt@matdavies.dev";
+}
