@@ -56,12 +56,9 @@ body {
   cursor: default;
 }
 
-main {
-  max-width: 80%;
-}
-
 .content-container {
-  max-width: 70%;
+  width: 80%;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
@@ -165,6 +162,11 @@ main {
 
 /* Title section */
 
+.title-page-container {
+  width: 100vw;
+  max-width: 80rem;
+}
+
 #main-img {
   height: 100vh;
   width: 100vw;
@@ -230,8 +232,6 @@ main {
   width: 100vw;
   overflow: hidden;
   padding: 10rem 0 4rem;
-  min-height: 80vh;
-  /* position: relative; */
 }
 
 #about-me-text {
@@ -286,7 +286,7 @@ main {
 
 #skills-icon-group {
   display: grid;
-  margin: 100px 0;
+  margin: 3rem 0;
   column-gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -294,8 +294,8 @@ main {
 }
 
 .tech-icon {
-  height: 60px;
-  width: 60px;
+  height: 3rem;
+  width: auto;
 }
 
 #skills-text {
@@ -358,7 +358,7 @@ main {
 } */
 
 .created-with {
-  margin: 30px 0 10px;
+  margin: 2rem 0 -1rem;
   padding: 0;
   color: var(--highlight-mid);
   font-weight: 400;
