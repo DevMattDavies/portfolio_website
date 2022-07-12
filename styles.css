@@ -344,7 +344,7 @@ body {
   flex-direction: column;
   width: 50%;
   margin-right: 20px;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
 .project-right-section {
@@ -353,20 +353,10 @@ body {
   text-align: justify;
 }
 
-/* .project-screenshot {
-  margin: 2rem 0;
-} */
-
-.created-with {
-  margin: 2rem 0 -1rem;
-  padding: 0;
-  color: var(--highlight-mid);
-  font-weight: 400;
-}
-
 .project-icons {
   display: flex;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .project-icon {
